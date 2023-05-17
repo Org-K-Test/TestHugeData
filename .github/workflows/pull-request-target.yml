@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
-          token: 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
+          token: ${{GITHUB_TOKEN}}
           
       - name: Report
         shell: bash
